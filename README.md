@@ -87,7 +87,7 @@ Each folder contains:
 ## ✍️ Author
 
 - **Name**: Riyanshu Sharma
-- **GitHub Profile**: [@sourav-kumar-357](https://github.com/Sharmariyanshu)
+- **GitHub Profile**: [@sharmariyanshu](https://github.com/Sharmariyanshu)
 
 ---
 
