@@ -1,4 +1,6 @@
-//Given three distinct numbers a, b and c. Find the number with a value in the middle
+/*
+Given three distinct numbers a, b and c. Find the number with a value in the middle
+*/
 
 package S02_Mathematics;
 
