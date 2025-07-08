@@ -33,5 +33,3 @@ public class lcmAndGcd {
         return gcd(b, a % b);
     }
 }
-
-
