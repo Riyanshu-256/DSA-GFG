@@ -4,7 +4,7 @@ You are given an integer n. Your task is to reverse the digits, ensuring that th
 
 package S02_Mathematics;
 
-public class ReverseDigit {
+public class ReverseDigits {
     public int reverseDigits(int n) {
         // Code here
         int rev = 0;
