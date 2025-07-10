@@ -22,14 +22,14 @@ package S02_Mathematics;
 public class lcmAndGcd {
 
     public static int[] lcmAndGcd(int a, int b) {
-        int gcdValue = gcd(a, b);
+        int gcdValue = Gcd(a, b);
         int lcmValue = (a * b) / gcdValue;
         return new int[]{lcmValue, gcdValue};  // returning int[]
     }
 
-    public static int gcd(int a, int b) {
+    public static int Gcd(int a, int b) {
         if (b == 0)
             return a;
-        return gcd(b, a % b);
+        return Gcd(b, a % b);
     }
 }
