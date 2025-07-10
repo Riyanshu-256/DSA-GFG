@@ -11,7 +11,7 @@ public class NthFibonacci {
         if (N == 0){
         return 0;
         }
-        if (N == 1){}
+        if (N == 1){
         return 1;
         }
         int a = 0, b = 1;
@@ -23,3 +23,5 @@ public class NthFibonacci {
         return b;
     }
 }
+
+
