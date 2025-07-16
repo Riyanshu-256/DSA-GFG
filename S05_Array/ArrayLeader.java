@@ -1,27 +1,29 @@
 /*
-Given a sorted array arr. Return the size of the modified array which contains only distinct elements.
-Note:
-1. Don't use set or HashMap to solve the problem.
-2. You must return the modified array size only where distinct elements are present and modify the original array such that all the distinct elements come at the beginning of the original array.
+You are given an array arr of positive integers. Your task is to find all the leaders in the array. An element is considered a leader if it is greater than or equal to all elements to its right. The rightmost element is always a leader.
 */
 
 package S05_Array;
 
-public class ArrayLeader {
-    public int removeDuplicates(int[] arr) {
-        // Code Here
-        if (arr.length == 0) {
-            return 0;
-        }
+import java.util.ArrayList;
+import java.util.Collections;
 
-        int res = 1;
-        for (int i = 1; i < arr.length; i++) {
-           
-            if (arr[i] != arr[res - 1]) {
-                arr[res] = arr[i];
-                res++;
+public class ArrayLeader {
+    static ArrayList<Integer> leaders(int arr[]) {
+        // code here
+        ArrayList<Integer> result = new ArrayList<>();
+        int n = arr.length;
+
+        int maxFromRight = arr[n - 1];
+        result.add(maxFromRight);
+
+        for (int i = n - 2; i >= 0; i--) {
+            if (arr[i] >= maxFromRight) {
+                maxFromRight = arr[i];
+                result.add(maxFromRight);
             }
         }
-        return res;
+
+        Collections.reverse(result);
+        return result;
     }
 }
