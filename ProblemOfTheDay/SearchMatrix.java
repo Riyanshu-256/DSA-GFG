@@ -40,5 +40,5 @@ public class SearchMatrix {
         
         return false;
     }
-}
+} 
 
