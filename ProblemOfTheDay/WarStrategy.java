@@ -7,7 +7,7 @@ import java.util.List;
 public class WarStrategy {
     public int minSoldiers(int[] arr, int k) {
         // code here
-         int n = arr.length;
+        int n = arr.length;
         int luckyCount = 0;
         List<Integer> additions = new ArrayList<>();
         
