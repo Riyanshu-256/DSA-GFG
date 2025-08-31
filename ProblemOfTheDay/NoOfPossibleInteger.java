@@ -29,4 +29,4 @@ public class NoOfPossibleInteger {
 
         return count;
     }
-}
+}   
