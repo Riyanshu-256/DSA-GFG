@@ -13,7 +13,7 @@ public class PranthesisValid {
                     open--; // matched with a previous '('
                 } else {
                     close++; // no matching '(' available
-                }
+                } 
             }
         }
 
