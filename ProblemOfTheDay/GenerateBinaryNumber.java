@@ -1,3 +1,7 @@
+package ProblemOfTheDay;
+
+import java.util.ArrayList;
+
 public class GenerateBinaryNumber {
     public ArrayList<String> generateBinary(int n) {
         ArrayList<String> result = new ArrayList<>();
