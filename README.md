@@ -1,6 +1,6 @@
 # Data Structures and Algorithms in Java - GFG Self-Paced 🚀
 
-Welcome to my DSA-GFG repository!  
+Welcome to my DSA-GFG repository!
 This repository contains my complete learning journey of **Data Structures and Algorithms (DSA)** implemented in **Java**.   
 It follows the structure and syllabus of the **"GFG DSA Self-Paced Course"**, designed to strengthen core programming and problem-solving skills.
 
