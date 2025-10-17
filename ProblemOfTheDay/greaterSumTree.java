@@ -1,6 +1,7 @@
 package ProblemOfTheDay;
 
 public class greaterSumTree {
+    
     class Solution {
     // Helper variable to store running sum
     static int sum = 0;
