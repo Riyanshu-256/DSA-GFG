@@ -4,26 +4,27 @@ Given a array arr of integers, return the sums of all subsets in the list.  Retu
 
 package S04_Recursion;
 
-import java.util.ArrayList;
-
 public class SubsetSum {
-    public ArrayList<Integer> subsetSums(int[] arr) {
-        // code here
-        ArrayList<Integer> result = new ArrayList<>();
-        subsetSums(arr, 0, 0, result);
-        return result;
+    static Boolean isSubsetSum(int arr[], int sum) {
+        int n = arr.length;
+        Boolean[][] dp = new Boolean[n + 1][sum + 1];
+        return helper(arr, n, sum, dp);
     }
 
-    private void subsetSums(int[] arr, int index, int currentSum, ArrayList<Integer> result) {
-        if (index == arr.length) {
-            result.add(currentSum);
-            return;
-        }
+    static Boolean helper(int[] arr, int n, int sum, Boolean[][] dp) {
 
-        // Include the current element
-        subsetSums(arr, index + 1, currentSum + arr[index], result);
+        // base conditions
+        if (sum == 0) return true;
+        if (n == 0) return false;
 
-        // Exclude the current element
-        subsetSums(arr, index + 1, currentSum, result);
+        if (dp[n][sum] != null) return dp[n][sum];
+
+        // skip the element if it is larger
+        if (arr[n - 1] > sum)
+            return dp[n][sum] = helper(arr, n - 1, sum, dp);
+
+        return dp[n][sum] =
+                helper(arr, n - 1, sum, dp) ||
+                helper(arr, n - 1, sum - arr[n - 1], dp);
     }
 }
