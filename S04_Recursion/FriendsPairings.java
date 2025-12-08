@@ -1,4 +1,4 @@
-package S04_Recursion;
+
 
 public class FriendsPairings {
     public long countFriendsPairings(int n) {
