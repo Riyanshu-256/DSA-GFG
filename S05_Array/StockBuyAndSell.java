@@ -6,18 +6,13 @@ Note: We can only sell a stock which we have bought earlier and we cannot hold m
 package S05_Array;
 
 public class StockBuyAndSell {
-    public int stockBuySell(int[] arr) {
-        
+    int stockBuySell(int arr[]) {
         // code here
         int n = arr.length;
         int profit = 0;
-        
-        for (int i = 1; i < n; i++) {
-            if (arr[i] > arr[i - 1]) {
-                profit += arr[i] - arr[i - 1];
-            }
-        }
-        
+        for(int i=1; i<n; i++)
+        if(arr[i] > arr[i-1])
+        profit = profit + (arr[i] - arr[i-1]);
         return profit;
     }
 }
